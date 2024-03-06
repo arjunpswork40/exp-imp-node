@@ -137,7 +137,10 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
 
-
+app.get('/', (req, res) => {
+  console.log('User accessed the landing page');
+  res.send('Welcome to the exp-imp landing page!');
+});
 
 
 // catch 404 and forward to error handler
