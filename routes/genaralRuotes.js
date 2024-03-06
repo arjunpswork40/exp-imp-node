@@ -12,7 +12,4 @@ const { isApiAuthenticated } = require('../app/middlewares/auth/isAuthenticated'
 router.get("/privacy-policy", isApiAuthenticated, getPrivacyPolicy);
 router.get("/terms-and-conditions", isApiAuthenticated, getTermsAndConditions);
 
-
-
-
 module.exports = router;
